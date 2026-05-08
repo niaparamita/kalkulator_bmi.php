@@ -1,0 +1,345 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+    min-height:100vh;
+    padding:40px 20px;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Background Blur */
+
+.background-circle{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(90px);
+    z-index:-1;
+}
+
+.one{
+    width:300px;
+    height:300px;
+    background:#06b6d4;
+    top:-100px;
+    left:-100px;
+}
+
+.two{
+    width:300px;
+    height:300px;
+    background:#8b5cf6;
+    bottom:-100px;
+    right:-100px;
+}
+
+/* Container */
+
+.container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+}
+
+/* Glass Card */
+
+.glass-card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.3);
+    animation:fadeIn 1s ease;
+}
+
+/* Header */
+
+.header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.header h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#cbd5e1;
+    font-size:17px;
+}
+
+/* Form */
+
+.input-box{
+    margin-bottom:25px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:10px;
+    font-size:16px;
+    font-weight:600;
+}
+
+.input-box label i{
+    margin-right:8px;
+    color:#38bdf8;
+}
+
+.input-box input{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:15px;
+    background:rgba(255,255,255,0.12);
+    color:white;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.input-box input::placeholder{
+    color:#cbd5e1;
+}
+
+.input-box input:focus{
+    outline:none;
+    border:2px solid #38bdf8;
+    background:rgba(255,255,255,0.18);
+    transform:scale(1.01);
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:17px;
+    border:none;
+    border-radius:15px;
+    background:linear-gradient(135deg,#06b6d4,#8b5cf6);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Result */
+
+.result-card{
+    margin-top:35px;
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    animation:slideUp 0.5s ease;
+}
+
+.result-card h2{
+    margin-bottom:15px;
+}
+
+.bmi-score{
+    font-size:70px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+/* Kategori */
+
+.kategori{
+    display:inline-block;
+    padding:10px 25px;
+    border-radius:50px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.green{
+    background:#16a34a;
+}
+
+.yellow{
+    background:#ca8a04;
+}
+
+.orange{
+    background:#ea580c;
+}
+
+.red{
+    background:#dc2626;
+}
+
+/* Progress Bar */
+
+.progress-container{
+    width:100%;
+    height:20px;
+    background:rgba(255,255,255,0.1);
+    border-radius:20px;
+    overflow:hidden;
+    margin:20px 0;
+}
+
+.progress-bar{
+    height:100%;
+    border-radius:20px;
+    animation:load 1s ease;
+}
+
+/* Tips */
+
+.tips{
+    margin-top:15px;
+    background:rgba(255,255,255,0.08);
+    padding:15px;
+    border-radius:15px;
+    color:#e2e8f0;
+}
+
+/* Info Box */
+
+.info-box{
+    margin-top:40px;
+    padding:30px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.08);
+}
+
+.info-box h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.info-box h3{
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+.info-box p{
+    line-height:1.8;
+    color:#e2e8f0;
+}
+
+.info-box ul{
+    padding-left:20px;
+    margin-top:10px;
+}
+
+.info-box ul li{
+    margin-bottom:10px;
+    color:#cbd5e1;
+}
+
+/* Rumus */
+
+.rumus-box{
+    margin:20px 0;
+    padding:18px;
+    border-radius:15px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    background:linear-gradient(135deg,#06b6d4,#8b5cf6);
+}
+
+/* Table */
+
+.table-section{
+    margin-top:40px;
+}
+
+.table-section h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+table th{
+    background:#8b5cf6;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    background:rgba(255,255,255,0.08);
+}
+
+table tr:nth-child(even) td{
+    background:rgba(255,255,255,0.05);
+}
+
+/* Animations */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes slideUp{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes load{
+
+    from{
+        width:0;
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .glass-card{
+        padding:25px;
+    }
+
+    .header h1{
+        font-size:35px;
+    }
+
+    .bmi-score{
+        font-size:55px;
+    }
+
+}
