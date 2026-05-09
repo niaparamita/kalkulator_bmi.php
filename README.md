@@ -37,26 +37,10 @@ Kemudian sistem akan:
 Rumus BMI yang digunakan pada program:
 
 \[
-BMI = \frac{Berat\ Badan}{(Tinggi\ Badan\ dalam\ meter)^2}
+BMI = (Berat Badan / Tinggi Badan)^2
 \]
 
-Contoh:
 
-- Berat badan = 55 kg
-- Tinggi badan = 170 cm
-
-\[
-BMI = \frac{55}{(1.70)^2}
-\]
-
-Hasil:
-
-\[
-BMI = 19.0
-\]
-
-Kategori:
-✅ Normal
 
 ---
 
