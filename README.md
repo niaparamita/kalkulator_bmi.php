@@ -1,3 +1,9 @@
+PROJECT BY 
+NAMA: NI MADE NIA PARAMITA
+NIM: 2501010376
+KELAS: IF C
+
+
 # 💪 BMI Calculator Premium
 
 BMI Calculator Premium adalah website kalkulator BMI (Body Mass Index) berbasis web yang dibuat menggunakan PHP, HTML, CSS, dan JavaScript.  
@@ -136,15 +142,3 @@ Memiliki:
 - XAMPP
 - Apache Server
 - Web Browser
-
----
-
-# 📁 Project Structure
-
-```plaintext
-bmi/
-│
-├── index.php
-├── style.css
-├── script.js
-└── README.md
